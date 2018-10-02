@@ -3,7 +3,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
 use_frameworks!
 
-target 'femup' do
+target 'villou_ios' do
     pod 'SnapKit', '~> 4.0.0'
     pod 'Moya/RxSwift', '~> 11.0'
     pod 'SDWebImage', '~> 4.0'

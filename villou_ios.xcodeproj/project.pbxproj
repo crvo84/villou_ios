@@ -41,11 +41,14 @@
 		73A51791216175CF001FB390 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A51790216175CF001FB390 /* UIImage+Extensions.swift */; };
 		73A517932161B66D001FB390 /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A517922161B66D001FB390 /* DatabaseModel.swift */; };
 		73DF4888210D72B600A7A344 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DF4887210D72B600A7A344 /* UIScrollView+Extensions.swift */; };
+		96D94D3DABCC195FC67B2AFE /* Pods_villou_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A562FB17DDCD2A2AA6576E5 /* Pods_villou_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0C7F3024F5B2CE275F73B681 /* Pods-femup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-femup.release.xcconfig"; path = "Pods/Target Support Files/Pods-femup/Pods-femup.release.xcconfig"; sourceTree = "<group>"; };
 		176BEBFA0A406A1A7AF2B726 /* Pods-femup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-femup.debug.xcconfig"; path = "Pods/Target Support Files/Pods-femup/Pods-femup.debug.xcconfig"; sourceTree = "<group>"; };
+		2A562FB17DDCD2A2AA6576E5 /* Pods_villou_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_villou_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		472D51BDD89982F40DDE1DAE /* Pods-villou_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-villou_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-villou_ios/Pods-villou_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		5CC391D4CB0DC8DC15F4E27A /* Pods_femup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_femup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		730E196E20AE617600BACDAA /* villou_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = villou_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		730E197120AE617600BACDAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		CC975916B8342FACF0339A65 /* Pods-MyList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyList/Pods-MyList.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA9BEB5D7D777395150B180 /* Pods-MyList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyList.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyList/Pods-MyList.release.xcconfig"; sourceTree = "<group>"; };
 		F0B1D579FEBC44F1568F6379 /* Pods_MyList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D6B8ECEC6D80CC80152C10 /* Pods-villou_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-villou_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-villou_ios/Pods-villou_ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,7 @@
 			files = (
 				127D5855BD58DF56B4F6E5A4 /* Pods_MyList.framework in Frameworks */,
 				71D7DF97062C06485D1F51DB /* Pods_femup.framework in Frameworks */,
+				96D94D3DABCC195FC67B2AFE /* Pods_villou_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +306,8 @@
 				EAA9BEB5D7D777395150B180 /* Pods-MyList.release.xcconfig */,
 				176BEBFA0A406A1A7AF2B726 /* Pods-femup.debug.xcconfig */,
 				0C7F3024F5B2CE275F73B681 /* Pods-femup.release.xcconfig */,
+				472D51BDD89982F40DDE1DAE /* Pods-villou_ios.debug.xcconfig */,
+				F6D6B8ECEC6D80CC80152C10 /* Pods-villou_ios.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -310,6 +317,7 @@
 			children = (
 				F0B1D579FEBC44F1568F6379 /* Pods_MyList.framework */,
 				5CC391D4CB0DC8DC15F4E27A /* Pods_femup.framework */,
+				2A562FB17DDCD2A2AA6576E5 /* Pods_villou_ios.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -396,7 +404,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-femup-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-villou_ios-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -409,7 +417,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-femup/Pods-femup-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-villou_ios/Pods-villou_ios-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
@@ -442,7 +450,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-femup/Pods-femup-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-villou_ios/Pods-villou_ios-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -620,16 +628,13 @@
 		};
 		730E198120AE617700BACDAA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 176BEBFA0A406A1A7AF2B726 /* Pods-femup.debug.xcconfig */;
+			baseConfigurationReference = 472D51BDD89982F40DDE1DAE /* Pods-villou_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F26XL4W94;
 				INFOPLIST_FILE = "$(SRCROOT)/villou_ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.villou.villou_ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -639,16 +644,13 @@
 		};
 		730E198220AE617700BACDAA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C7F3024F5B2CE275F73B681 /* Pods-femup.release.xcconfig */;
+			baseConfigurationReference = F6D6B8ECEC6D80CC80152C10 /* Pods-villou_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F26XL4W94;
 				INFOPLIST_FILE = "$(SRCROOT)/villou_ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.villou.villou_ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
