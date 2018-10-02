@@ -58,7 +58,7 @@ struct Theme {
             switch self {
             case .titleA(let size), .subtitleA(let size), .paragraphA(let size),
                  .buttonTitleA(let size):
-                return UIFont.systemFont(ofSize: size)
+                return UIFont.systemFont(ofSize: size.rawValue)
             }
         }
     }
@@ -95,13 +95,13 @@ extension Theme {
         var backgroundColor: Color
         var tintColor: Color
         var preferredStatusBarStyle: UIStatusBarStyle
-        var isTranslucent = Bool
+        var isTranslucent: Bool
         var titleFont: Font?
         var titleTextColor: Color?
     }
 
     struct NavigationItem {
-        var titleImage: UIView?
+        var titleView: UIView?
         var backButtonTitle: String?
         var backButtonTitleFont: Font
         var hidesBackButton: Bool
@@ -125,17 +125,17 @@ extension Theme.Label {
     }
 }
 
-extension Theme.AttributedString {
-    func apply(to label: UILabel) {
-        label.attributedText = AttributedStringMake { (attrs, ctx) in
-            attrs.foregroundColor = textColor.color
-            attrs.font = font.font
-            attrs.alignment = alignment
-            attrs.kern = kern.rawValue
-            ctx.append(text)
-        }
-    }
-}
+//extension Theme.AttributedString {
+//    func apply(to label: UILabel) {
+//        label.attributedText = AttributedStringMake { (attrs, ctx) in
+//            attrs.foregroundColor = textColor.color
+//            attrs.font = font.font
+//            attrs.alignment = alignment
+//            attrs.kern = kern.rawValue
+//            ctx.append(text)
+//        }
+//    }
+//}
 
 extension Theme.Button {
     func apply(to button: UIButton) {
@@ -172,7 +172,7 @@ extension Theme.NavigationItem {
 
         let backButton = UIBarButtonItem()
         backButton.title = backButtonTitle
-        backButton.setTitleTextAttributes([NSAttributedStringKey.font : backButtonFont.font], for: .normal)
+        backButton.setTitleTextAttributes([NSAttributedStringKey.font : backButtonTitleFont.font], for: .normal)
 
         navItem.backBarButtonItem = backButton
         navItem.hidesBackButton = hidesBackButton

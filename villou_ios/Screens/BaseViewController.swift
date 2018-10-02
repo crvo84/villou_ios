@@ -33,35 +33,9 @@ class BaseViewController: UIViewController {
         }
     }
 
-    func themeSetupButtons(_ buttons: [UIButton]) {
-        _ = buttons.map {
-            $0.backgroundColor = Theme.Colors.buttonBg
-            $0.setTitleColor(Theme.Colors.buttonText, for: .normal)
-            $0.layer.cornerRadius = Theme.Geometry.buttonCornerRadius
-            $0.layer.masksToBounds = true
-        }
-    }
-
-    func themeSetupTextFields(_ textFields: [UITextField]) {
-        _ = textFields.map {
-            $0.textColor = Theme.Colors.textFieldText
-        }
-    }
-
-    func themeSetupLabels(_ labels: [UILabel], fontType: Theme.FontType) {
-        _ = labels.map {
-            $0.textColor = fontType.color
-        }
-    }
-
-    func themeSetupBarButtonItems(_ items: [UIBarButtonItem]) {
-        _ = items.map {
-            $0.tintColor = Theme.Colors.main
-        }
-    }
-
     // MARK: Activity Indicator
 
+    // TODO: Implement in a protocol extension
     func showSpinner(userInteractionEnabled: Bool) {
         view.bringSubview(toFront: spinner)
         view.isUserInteractionEnabled = userInteractionEnabled

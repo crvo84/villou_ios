@@ -33,7 +33,6 @@
 		7322817220F802E500ECA96F /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7322817120F802E500ECA96F /* InitialViewModel.swift */; };
 		7322817420F802F700ECA96F /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7322817320F802F700ECA96F /* Initial.storyboard */; };
 		73A1A8892163398500AB71E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A1A8882163398500AB71E4 /* Constants.swift */; };
-		73A1A88C216347B000AB71E4 /* AttributedStringMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A1A88B216347B000AB71E4 /* AttributedStringMaker.swift */; };
 		73A517852161496C001FB390 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A517842161496C001FB390 /* UserServices.swift */; };
 		73A5178821614A3D001FB390 /* UserServicesDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178721614A3D001FB390 /* UserServicesDTOs.swift */; };
 		73A5178C21614BA2001FB390 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178B21614BA2001FB390 /* UserManager.swift */; };
@@ -76,7 +75,6 @@
 		7322817120F802E500ECA96F /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
 		7322817320F802F700ECA96F /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		73A1A8882163398500AB71E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		73A1A88B216347B000AB71E4 /* AttributedStringMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributedStringMaker.swift; sourceTree = "<group>"; };
 		73A517842161496C001FB390 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		73A5178721614A3D001FB390 /* UserServicesDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesDTOs.swift; sourceTree = "<group>"; };
 		73A5178B21614BA2001FB390 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
@@ -251,7 +249,6 @@
 		73A1A88A2163479600AB71E4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				73A1A88B216347B000AB71E4 /* AttributedStringMaker.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -475,7 +472,6 @@
 				730E199720AF626900BACDAA /* PopularMoviesViewController.swift in Sources */,
 				73A5178821614A3D001FB390 /* UserServicesDTOs.swift in Sources */,
 				7322817220F802E500ECA96F /* InitialViewModel.swift in Sources */,
-				73A1A88C216347B000AB71E4 /* AttributedStringMaker.swift in Sources */,
 				73A517932161B66D001FB390 /* DatabaseModel.swift in Sources */,
 				730E199D20AF691000BACDAA /* VillouError.swift in Sources */,
 				73A517852161496C001FB390 /* UserServices.swift in Sources */,
@@ -634,7 +630,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F26XL4W94;
 				INFOPLIST_FILE = "$(SRCROOT)/villou_ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.villou.villou_ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -650,7 +649,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F26XL4W94;
 				INFOPLIST_FILE = "$(SRCROOT)/villou_ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.villou.villou_ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
