@@ -33,3 +33,11 @@ extension DatabaseModel where Self: Object {
         return databaseManager.retrieve(Self.self, id: id) as? Self
     }
 }
+
+class BaseDatabaseModel: Object, DatabaseModel {
+    @objc dynamic var id: String!
+
+    override static func primaryKey() -> String? {
+        return "id"
+    }
+}

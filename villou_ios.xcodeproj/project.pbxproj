@@ -34,7 +34,6 @@
 		7322817420F802F700ECA96F /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7322817320F802F700ECA96F /* Initial.storyboard */; };
 		739054E82165C475008F820A /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E72165C475008F820A /* DatabaseModel.swift */; };
 		739054EA2165C98D008F820A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E92165C98D008F820A /* User.swift */; };
-		739054EC2165E7D7008F820A /* BaseDatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054EB2165E7D7008F820A /* BaseDatabaseModel.swift */; };
 		73A1A8892163398500AB71E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A1A8882163398500AB71E4 /* Constants.swift */; };
 		73A517852161496C001FB390 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A517842161496C001FB390 /* UserServices.swift */; };
 		73A5178821614A3D001FB390 /* UserServicesDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178721614A3D001FB390 /* UserServicesDTOs.swift */; };
@@ -78,7 +77,6 @@
 		7322817320F802F700ECA96F /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
 		739054E72165C475008F820A /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
 		739054E92165C98D008F820A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		739054EB2165E7D7008F820A /* BaseDatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDatabaseModel.swift; sourceTree = "<group>"; };
 		73A1A8882163398500AB71E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		73A517842161496C001FB390 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		73A5178721614A3D001FB390 /* UserServicesDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesDTOs.swift; sourceTree = "<group>"; };
@@ -151,6 +149,7 @@
 				730E19A620AF9F3200BACDAA /* SceneCoordinator.swift */,
 				730E19A820AFA58500BACDAA /* SceneTransitionType.swift */,
 				730E19A320AF98E600BACDAA /* Scene+ViewController.swift */,
+				730E198920AE6E3A00BACDAA /* BindableType.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -176,7 +175,6 @@
 		730E198720AE6CCF00BACDAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				730E198920AE6E3A00BACDAA /* BindableType.swift */,
 				730E19A020AF6ADE00BACDAA /* DataModel */,
 				73A5178D2161753C001FB390 /* DatabaseModel */,
 			);
@@ -296,7 +294,6 @@
 			isa = PBXGroup;
 			children = (
 				739054E72165C475008F820A /* DatabaseModel.swift */,
-				739054EB2165E7D7008F820A /* BaseDatabaseModel.swift */,
 				739054E92165C98D008F820A /* User.swift */,
 			);
 			path = DatabaseModel;
@@ -470,7 +467,6 @@
 				73171150210AD6C400DAC01C /* MovieTableViewCell.swift in Sources */,
 				739054EA2165C98D008F820A /* User.swift in Sources */,
 				7322816D20F7FE1B00ECA96F /* BaseViewController.swift in Sources */,
-				739054EC2165E7D7008F820A /* BaseDatabaseModel.swift in Sources */,
 				730E377720BB6BBF00BACDAA /* Config.swift in Sources */,
 				730E199920AF627600BACDAA /* PopularMoviesViewModel.swift in Sources */,
 				73A1A8892163398500AB71E4 /* Constants.swift in Sources */,

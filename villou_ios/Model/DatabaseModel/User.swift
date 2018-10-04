@@ -8,13 +8,8 @@
 
 import Foundation
 
-class User: Object, DatabaseModel {
-    @objc dynamic var id: String!
+class User: BaseDatabaseModel {
     @objc dynamic var email: String!
     @objc dynamic var firstName: String!
     @objc dynamic var lastName: String!
-
-    override static func primaryKey() -> String? {
-        return "id"
-    }
 }
