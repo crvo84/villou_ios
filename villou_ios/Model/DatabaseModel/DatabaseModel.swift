@@ -1,25 +1,35 @@
 //
 //  DatabaseModel.swift
+//  villou_ios
 //
-//  Created by Carlos Villanueva Ousset on 9/30/18.
+//  Created by Carlos Villanueva Ousset on 10/3/18.
 //  Copyright © 2018 Carlos Villanueva Ousset. All rights reserved.
 //
 
 import Foundation
 import RealmSwift
+import RxSwift
+import RxRealm
 
 protocol DatabaseModel: Codable {
-
 }
 
-extension DatabaseModel: Object {
-    func save(realm: Realm = try! Realm()) { // + Rx (saves or create?)
-        // DatabaseManager.save
+extension DatabaseModel where Self: Object {
+
+    func save(databaseManager: DatabaseManager = .default) {
+        try? databaseManager.save(self)
     }
 
-    func delete(real: Realm = try! Realm()) { // + Rx
-        // DatabaseManager.delete
+    func delete(databaseManager: DatabaseManager = .default) {
+        try? databaseManager.delete(self)
     }
 
-//    func get // + Rx
+    static func retrieveAll(databaseManager: DatabaseManager) -> [Self] {
+        let databaseModels = databaseManager.retrieveAll(Self.self) as? [Self]
+        return databaseModels ?? []
+    }
+
+    static func retrieve(id: String, databaseManager: DatabaseManager = .default) -> Self? {
+        return databaseManager.retrieve(Self.self, id: id) as? Self
+    }
 }

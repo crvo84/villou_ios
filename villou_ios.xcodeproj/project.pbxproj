@@ -32,13 +32,15 @@
 		7322817020F802DD00ECA96F /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7322816F20F802DD00ECA96F /* InitialViewController.swift */; };
 		7322817220F802E500ECA96F /* InitialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7322817120F802E500ECA96F /* InitialViewModel.swift */; };
 		7322817420F802F700ECA96F /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7322817320F802F700ECA96F /* Initial.storyboard */; };
+		739054E82165C475008F820A /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E72165C475008F820A /* DatabaseModel.swift */; };
+		739054EA2165C98D008F820A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E92165C98D008F820A /* User.swift */; };
+		739054EC2165E7D7008F820A /* BaseDatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054EB2165E7D7008F820A /* BaseDatabaseModel.swift */; };
 		73A1A8892163398500AB71E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A1A8882163398500AB71E4 /* Constants.swift */; };
 		73A517852161496C001FB390 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A517842161496C001FB390 /* UserServices.swift */; };
 		73A5178821614A3D001FB390 /* UserServicesDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178721614A3D001FB390 /* UserServicesDTOs.swift */; };
 		73A5178C21614BA2001FB390 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178B21614BA2001FB390 /* UserManager.swift */; };
 		73A5178F21617583001FB390 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178E21617583001FB390 /* DatabaseManager.swift */; };
 		73A51791216175CF001FB390 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A51790216175CF001FB390 /* UIImage+Extensions.swift */; };
-		73A517932161B66D001FB390 /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A517922161B66D001FB390 /* DatabaseModel.swift */; };
 		73DF4888210D72B600A7A344 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DF4887210D72B600A7A344 /* UIScrollView+Extensions.swift */; };
 		96D94D3DABCC195FC67B2AFE /* Pods_villou_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A562FB17DDCD2A2AA6576E5 /* Pods_villou_ios.framework */; };
 /* End PBXBuildFile section */
@@ -74,13 +76,15 @@
 		7322816F20F802DD00ECA96F /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		7322817120F802E500ECA96F /* InitialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewModel.swift; sourceTree = "<group>"; };
 		7322817320F802F700ECA96F /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
+		739054E72165C475008F820A /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
+		739054E92165C98D008F820A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		739054EB2165E7D7008F820A /* BaseDatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDatabaseModel.swift; sourceTree = "<group>"; };
 		73A1A8882163398500AB71E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		73A517842161496C001FB390 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
 		73A5178721614A3D001FB390 /* UserServicesDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesDTOs.swift; sourceTree = "<group>"; };
 		73A5178B21614BA2001FB390 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		73A5178E21617583001FB390 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		73A51790216175CF001FB390 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
-		73A517922161B66D001FB390 /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
 		73DF4887210D72B600A7A344 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		CC975916B8342FACF0339A65 /* Pods-MyList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyList/Pods-MyList.debug.xcconfig"; sourceTree = "<group>"; };
 		EAA9BEB5D7D777395150B180 /* Pods-MyList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyList.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyList/Pods-MyList.release.xcconfig"; sourceTree = "<group>"; };
@@ -291,7 +295,9 @@
 		73A5178D2161753C001FB390 /* DatabaseModel */ = {
 			isa = PBXGroup;
 			children = (
-				73A517922161B66D001FB390 /* DatabaseModel.swift */,
+				739054E72165C475008F820A /* DatabaseModel.swift */,
+				739054EB2165E7D7008F820A /* BaseDatabaseModel.swift */,
+				739054E92165C98D008F820A /* User.swift */,
 			);
 			path = DatabaseModel;
 			sourceTree = "<group>";
@@ -457,11 +463,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739054E82165C475008F820A /* DatabaseModel.swift in Sources */,
 				730E198A20AE6E3A00BACDAA /* BindableType.swift in Sources */,
 				730E19A920AFA58500BACDAA /* SceneTransitionType.swift in Sources */,
 				73A51791216175CF001FB390 /* UIImage+Extensions.swift in Sources */,
 				73171150210AD6C400DAC01C /* MovieTableViewCell.swift in Sources */,
+				739054EA2165C98D008F820A /* User.swift in Sources */,
 				7322816D20F7FE1B00ECA96F /* BaseViewController.swift in Sources */,
+				739054EC2165E7D7008F820A /* BaseDatabaseModel.swift in Sources */,
 				730E377720BB6BBF00BACDAA /* Config.swift in Sources */,
 				730E199920AF627600BACDAA /* PopularMoviesViewModel.swift in Sources */,
 				73A1A8892163398500AB71E4 /* Constants.swift in Sources */,
@@ -472,7 +481,6 @@
 				730E199720AF626900BACDAA /* PopularMoviesViewController.swift in Sources */,
 				73A5178821614A3D001FB390 /* UserServicesDTOs.swift in Sources */,
 				7322817220F802E500ECA96F /* InitialViewModel.swift in Sources */,
-				73A517932161B66D001FB390 /* DatabaseModel.swift in Sources */,
 				730E199D20AF691000BACDAA /* VillouError.swift in Sources */,
 				73A517852161496C001FB390 /* UserServices.swift in Sources */,
 				730E197220AE617600BACDAA /* AppDelegate.swift in Sources */,
