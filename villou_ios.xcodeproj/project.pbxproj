@@ -203,7 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				73A5178621614A26001FB390 /* DTOs */,
-				73A5178A21614A68001FB390 /* Api Requests */,
+				73A5178A21614A68001FB390 /* Apis */,
 				730E198520AE6CB200BACDAA /* Services */,
 			);
 			path = Networking;
@@ -282,12 +282,12 @@
 			path = DTOs;
 			sourceTree = "<group>";
 		};
-		73A5178A21614A68001FB390 /* Api Requests */ = {
+		73A5178A21614A68001FB390 /* Apis */ = {
 			isa = PBXGroup;
 			children = (
 				730E198F20AE99AF00BACDAA /* UserApi.swift */,
 			);
-			path = "Api Requests";
+			path = Apis;
 			sourceTree = "<group>";
 		};
 		73A5178D2161753C001FB390 /* DatabaseModel */ = {

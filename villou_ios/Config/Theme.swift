@@ -74,6 +74,17 @@ struct Theme {
     enum Kern: Double {
         case standard = 1.0
     }
+
+    enum Image: String {
+        case logo
+
+        var image: UIImage {
+            guard let image = UIImage(named: rawValue) else {
+                fatalError("Asset for Theme.Image.\(rawValue) not found.")
+            }
+            return image
+        }
+    }
 }
 
 // MARK: Wrapper structs
