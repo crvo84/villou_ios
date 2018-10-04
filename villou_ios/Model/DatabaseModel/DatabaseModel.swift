@@ -16,21 +16,21 @@ protocol DatabaseModel: Codable {
 
 extension DatabaseModel where Self: Object {
 
-    func save(databaseManager: DatabaseManager = .default) {
-        try? databaseManager.save(self)
+    func save(manager: DatabaseManager = .default) {
+        try? manager.save(self)
     }
 
-    func delete(databaseManager: DatabaseManager = .default) {
-        try? databaseManager.delete(self)
+    func delete(manager: DatabaseManager = .default) {
+        try? manager.delete(self)
     }
 
-    static func retrieveAll(databaseManager: DatabaseManager) -> [Self] {
-        let databaseModels = databaseManager.retrieveAll(Self.self) as? [Self]
+    static func retrieveAll(manager: DatabaseManager) -> [Self] {
+        let databaseModels = manager.retrieveAll(Self.self) as? [Self]
         return databaseModels ?? []
     }
 
-    static func retrieve(id: String, databaseManager: DatabaseManager = .default) -> Self? {
-        return databaseManager.retrieve(Self.self, id: id) as? Self
+    static func retrieve(id: String, manager: DatabaseManager = .default) -> Self? {
+        return manager.retrieve(Self.self, id: id) as? Self
     }
 }
 

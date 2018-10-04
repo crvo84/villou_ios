@@ -29,7 +29,7 @@ class BaseViewController: UIViewController {
         spinner.hidesWhenStopped = true
         spinner.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.width.height.equalTo(Theme.Geometry.spinnerMainHeight)
+            make.width.height.equalTo(Constants.Geometry.spinnerMainHeight)
         }
     }
 

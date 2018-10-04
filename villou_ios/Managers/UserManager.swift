@@ -10,15 +10,27 @@ import Foundation
 
 class UserManager {
 
-    private let service: UserServicesType
+    private let userServices: UserServicesType
+    private let databaseManager: DatabaseManager
 
-    init(userService: UserServicesType = UserServices()) {
-        self.service = service
+    init(userServices: UserServicesType = UserServices(),
+         databaseManager: DatabaseManager = .default) {
+        self.userServices = userServices
+        self.databaseManager = databaseManager
     }
 
-//    private(set) var user: User? {
-//        get {
-//
-//        }
-//    }
+    private(set) var user: User? {
+        get {
+            return User.retrieveAll(manager: databaseManager).first
+        }
+        set {
+            if let newValue = newValue {
+                // create/update
+                newValue.save(manager: databaseManager)
+            } else {
+                // delete
+                user?.delete(manager: databaseManager)
+            }
+        }
+    }
 }
