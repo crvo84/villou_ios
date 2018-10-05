@@ -1,41 +1,41 @@
 //
-//  InitialViewController.swift
+//  SplashViewController.swift
 //  villou_ios
 //
 //  Created by Carlos Villanueva Ousset on 7/12/18.
 //  Copyright © 2018 Carlos Villanueva Ousset. All rights reserved.
 //
 
-import Foundation
-import RxSwift
+import UIKit
 
-class InitialViewController: MyTimeViewController, BindableType {
+class SplashViewController: BaseViewController, BindableType {
 
-    var viewModel: InitialViewModel!
+    var viewModel: SplashViewModel!
 
     // MARK: - Life cycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.isNavigationBarHidden = true
-    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        initialSetup()
-
-        // After some launch animation:
+        setupViewModel()
+        // Add logo animation here... then:
         showNextViewController()
     }
 
     // MARK: Setup
 
-    func bindViewModel() {}
+    func bindViewModel() {
+    }
 
-    fileprivate func initialSetup() {
+    override func setupUI() {
+        super.setupUI()
+
+        navigationController?.isNavigationBarHidden = true
+    }
+
+    private func setupViewModel() {
         let sceneCoordinator = SceneCoordinator(window: view.window!)
-        self.viewModel = InitialViewModel(sceneCoordinator: sceneCoordinator)
+        self.viewModel = SplashViewModel(sceneCoordinator: sceneCoordinator)
     }
 
     // MARK: Navigation

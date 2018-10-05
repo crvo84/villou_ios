@@ -11,24 +11,22 @@ import UIKit
 extension Scene {
 
     func viewController() -> UIViewController {
-        let storyboard = getStoryboard()
         switch self {
-        case let .popularMovies(viewModel):
-            let nav = storyboard.instantiateViewController(withIdentifier: "PopularMovies") as! UINavigationController
-            var vc = nav.viewControllers.first! as! PopularMoviesViewController
-            vc.bindViewModel(to: viewModel)
+        case let .intro(viewModel):
+            var vc = storyboard.instantiateViewController(withIdentifier: identifier) as! IntroViewController
+            vc.bind(to: viewModel)
             return vc
         }
-
     }
 
-    private func getStoryboard() -> UIStoryboard {
-        let name: String
-        switch self {
-        case .popularMovies:
-            name = "PopularMovies"
-        }
+    private var storyboard: UIStoryboard {
+        return UIStoryboard(name: identifier, bundle: nil)
+    }
 
-        return UIStoryboard(name: name, bundle: nil)
+    private var identifier: String {
+        switch self {
+        case .intro:
+            return "Intro"
+        }
     }
 }

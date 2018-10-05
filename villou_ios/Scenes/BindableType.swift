@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 import RxSwift
 
 protocol BindableType {
@@ -10,7 +10,7 @@ protocol BindableType {
 }
 
 extension BindableType where Self: UIViewController {
-    mutating func bindViewModel(to model: Self.ViewModelType) {
+    mutating func bind(to model: Self.ViewModelType) {
         viewModel = model
         loadViewIfNeeded()
         bindViewModel()

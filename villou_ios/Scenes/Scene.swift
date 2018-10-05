@@ -6,10 +6,8 @@
 //  Copyright © 2018 Carlos Villanueva Ousset. All rights reserved.
 //
 
-import Foundation
-
 enum Scene {
-    case popularMovies(PopularMoviesViewModel)
+    case intro(IntroViewModel)
 }
 
 

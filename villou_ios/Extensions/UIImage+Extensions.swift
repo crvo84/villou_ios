@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 extension UIImageView {
     func setImage(with urlStr: String?, placeholder: UIImage? = nil) {

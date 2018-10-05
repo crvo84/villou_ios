@@ -6,9 +6,8 @@
 //  Copyright © 2018 Carlos Villanueva Ousset. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import RxSwift
-import SnapKit
 
 class BaseViewController: UIViewController, SpinnerViewable {
     let disposeBag = DisposeBag()
@@ -19,7 +18,7 @@ class BaseViewController: UIViewController, SpinnerViewable {
         setupUI()
     }
 
-    private func setupUI() {
+    func setupUI() {
         view.backgroundColor = Theme.Color.background.color
     }
 }
