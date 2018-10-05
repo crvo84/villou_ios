@@ -16,9 +16,12 @@ struct SplashViewModel: SplashViewModelType {
     let sceneCoordinator: SceneCoordinatorType
 
     func showNextViewController() -> Completable {
+        // Get UserManager.default
         // If logged user -> show Logged View Controller
         // else -> show intro view controller
-        return Completable.empty()
+        let introViewModel = IntroViewModel(sceneCoordinator: sceneCoordinator)
+        return sceneCoordinator.transition(to: Scene.intro(introViewModel),
+                                           type: .root(animated: true))
     }
 }
 

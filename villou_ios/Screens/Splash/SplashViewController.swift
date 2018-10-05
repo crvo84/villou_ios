@@ -18,8 +18,10 @@ class SplashViewController: BaseViewController, BindableType {
         super.viewDidAppear(animated)
 
         setupViewModel()
-        // Add logo animation here... then:
-        showNextViewController()
+        // Add logo animation here... then showNextViewController:
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.3) {
+            self.showNextViewController()
+        }
     }
 
     // MARK: Setup
