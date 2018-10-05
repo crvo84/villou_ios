@@ -10,6 +10,9 @@ PODS:
   - Moya/RxSwift (11.0.2):
     - Moya/Core
     - RxSwift (~> 4.0)
+  - NVActivityIndicatorView (4.4.0):
+    - NVActivityIndicatorView/Presenter (= 4.4.0)
+  - NVActivityIndicatorView/Presenter (4.4.0)
   - Realm (3.10.0):
     - Realm/Headers (= 3.10.0)
   - Realm/Headers (3.10.0)
@@ -34,6 +37,7 @@ PODS:
 DEPENDENCIES:
   - Action
   - Moya/RxSwift (~> 11.0)
+  - NVActivityIndicatorView
   - RealmSwift
   - RxCocoa (~> 4.0)
   - RxDataSources (~> 3.0)
@@ -48,6 +52,7 @@ SPEC REPOS:
     - Alamofire
     - Differentiator
     - Moya
+    - NVActivityIndicatorView
     - Realm
     - RealmSwift
     - Result
@@ -63,6 +68,7 @@ SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   Moya: a725035953bc1c0eb1be505ab903984501d82440
+  NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
   Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
   RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
@@ -73,6 +79,6 @@ SPEC CHECKSUMS:
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 1a9ede4b6f58dbfc1a36adceb445a4b244894f71
+PODFILE CHECKSUM: 6596ffb295016e529a887857d6c4ae679a860ad3
 
 COCOAPODS: 1.5.3

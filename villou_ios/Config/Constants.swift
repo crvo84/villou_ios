@@ -12,4 +12,8 @@ struct Constants {
     struct Geometry {
         static let spinnerHeight: CGFloat = 60.0
     }
+
+    struct Time {
+        static let fadeInOut: TimeInterval = 0.3
+    }
 }

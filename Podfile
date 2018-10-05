@@ -8,6 +8,7 @@ target 'villou_ios' do
     pod 'Moya/RxSwift', '~> 11.0'
     pod 'SDWebImage', '~> 4.0'
     pod 'RealmSwift'
+    pod 'NVActivityIndicatorView'
 
     # RxSwift
     pod 'RxSwift', '~> 4.0'

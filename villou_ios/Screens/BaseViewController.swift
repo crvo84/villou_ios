@@ -10,9 +10,8 @@ import Foundation
 import RxSwift
 import SnapKit
 
-class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, SpinnerViewable {
     let disposeBag = DisposeBag()
-    let spinner = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,31 +20,6 @@ class BaseViewController: UIViewController {
     }
 
     private func setupUI() {
-        view.backgroundColor = Theme.Colors.bg
-
-        // Activity Indicator
-        view.addSubview(spinner)
-        spinner.color = Theme.Colors.spinner
-        spinner.hidesWhenStopped = true
-        spinner.snp.makeConstraints { make in
-            make.center.equalToSuperview()
-            make.width.height.equalTo(Constants.Geometry.spinnerMainHeight)
-        }
-    }
-
-    // MARK: Activity Indicator
-
-    // TODO: Implement in a protocol extension
-    func showSpinner(userInteractionEnabled: Bool) {
-        view.bringSubview(toFront: spinner)
-        view.isUserInteractionEnabled = userInteractionEnabled
-        guard !spinner.isAnimating else { return }
-        spinner.startAnimating()
-    }
-
-    func hideSpinner() {
-        view.isUserInteractionEnabled = true
-        guard spinner.isAnimating else { return }
-        spinner.stopAnimating()
+        view.backgroundColor = Theme.Color.background.color
     }
 }

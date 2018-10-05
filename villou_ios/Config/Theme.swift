@@ -85,6 +85,27 @@ struct Theme {
             return image
         }
     }
+
+    enum SpinnerType {
+        case standard(color: Color)
+        case large(color: Color)
+
+        var size: CGSize {
+            switch self {
+            case .standard:
+                return CGSize(width: 30, height: 30)
+            case .large:
+                return CGSize(width: 60, height: 60)
+            }
+        }
+
+        var color: UIColor {
+            switch self {
+            case .standard(let color), .large(let color):
+                return color.color
+            }
+        }
+    }
 }
 
 // MARK: Wrapper structs
