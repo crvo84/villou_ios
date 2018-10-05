@@ -13,7 +13,7 @@
         <!--Splash View Controller-->
         <scene sceneID="IxQ-w3-N7b">
             <objects>
-                <viewController id="Zx7-qf-DYg" customClass="SplashViewController" customModule="villou_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Splash" id="Zx7-qf-DYg" customClass="SplashViewController" customModule="villou_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gfc-Sa-u1F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
