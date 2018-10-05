@@ -30,7 +30,6 @@
 		7346196121671EC3000586A4 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7346196021671EC3000586A4 /* IntroViewController.swift */; };
 		7346196321671ECD000586A4 /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7346196221671ECD000586A4 /* IntroViewModel.swift */; };
 		7346196521671ED9000586A4 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7346196421671ED9000586A4 /* Intro.storyboard */; };
-		7346196721672600000586A4 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7346196621672600000586A4 /* Podfile */; };
 		739054E82165C475008F820A /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E72165C475008F820A /* DatabaseModel.swift */; };
 		739054EA2165C98D008F820A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E92165C98D008F820A /* User.swift */; };
 		73A1A8892163398500AB71E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A1A8882163398500AB71E4 /* Constants.swift */; };
@@ -71,7 +70,6 @@
 		7346196021671EC3000586A4 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		7346196221671ECD000586A4 /* IntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
 		7346196421671ED9000586A4 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
-		7346196621672600000586A4 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		739054E72165C475008F820A /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
 		739054E92165C98D008F820A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		73A1A8882163398500AB71E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 		730E196520AE617600BACDAA = {
 			isa = PBXGroup;
 			children = (
-				7346196621672600000586A4 /* Podfile */,
 				730E197020AE617600BACDAA /* villou_ios */,
 				730E196F20AE617600BACDAA /* Products */,
 				AFF5642787AFBE9971F584DC /* Pods */,
@@ -377,7 +374,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7346196721672600000586A4 /* Podfile in Resources */,
 				730E197C20AE617700BACDAA /* LaunchScreen.storyboard in Resources */,
 				730E197920AE617700BACDAA /* Assets.xcassets in Resources */,
 				7322817420F802F700ECA96F /* Splash.storyboard in Resources */,
