@@ -5,20 +5,21 @@
 //  Created by Carlos Villanueva Ousset on 9/30/18.
 //  Copyright © 2018 Carlos Villanueva Ousset. All rights reserved.
 //
-
 import Foundation
 
 // --------------------
 // MARK: - Create User
 // --------------------
+struct UserServicesRequestDTO {
+    struct Create: Encodable {
+        let firstName: String
+        let lastName: String
+        let email: String
+        let password: String
+    }
 
-struct CreateUserRequestDTO: Encodable {
-    let email: String
-    let password: String
-    let firstName: String
-    let lastName: String
-}
-
-struct CreateUserResponseDTO: Decodable {
-    let accessToken: String
+    struct Login: Encodable {
+        let email: String
+        let password: String
+    }
 }

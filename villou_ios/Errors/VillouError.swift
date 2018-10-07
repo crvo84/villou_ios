@@ -11,4 +11,5 @@ import Foundation
 enum VillouError: Error {
 //    case invalidServerResponse
     case decoding(type: Decodable.Type, underlyingError: Error?)
+    case unauthorizedRequest
 }

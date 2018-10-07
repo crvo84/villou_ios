@@ -9,6 +9,8 @@
 import Foundation
 
 struct Config {
+    static let isDebugMode = true
+
     struct Api {
         static let baseUrl = ""
     }

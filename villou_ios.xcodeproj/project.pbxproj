@@ -30,12 +30,17 @@
 		7346196121671EC3000586A4 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7346196021671EC3000586A4 /* IntroViewController.swift */; };
 		7346196321671ECD000586A4 /* IntroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7346196221671ECD000586A4 /* IntroViewModel.swift */; };
 		7346196921672A25000586A4 /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7346196821672A25000586A4 /* Intro.storyboard */; };
+		735F884B216A9B1500D0E531 /* SessionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F884A216A9B1500D0E531 /* SessionState.swift */; };
+		735F884D216A9D0100D0E531 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F884C216A9D0100D0E531 /* KeychainManager.swift */; };
+		735F884F216AA74B00D0E531 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F884E216AA74B00D0E531 /* Token.swift */; };
+		735F8851216AA87600D0E531 /* ServicesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F8850216AA87600D0E531 /* ServicesType.swift */; };
+		735F8853216ABDD700D0E531 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F8852216ABDD700D0E531 /* Codable+Extensions.swift */; };
+		735F8855216ACA4000D0E531 /* UserServicesDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F8854216ACA4000D0E531 /* UserServicesDTOs.swift */; };
 		739054E82165C475008F820A /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E72165C475008F820A /* DatabaseModel.swift */; };
 		739054EA2165C98D008F820A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E92165C98D008F820A /* User.swift */; };
 		73A1A8892163398500AB71E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A1A8882163398500AB71E4 /* Constants.swift */; };
 		73A517852161496C001FB390 /* UserServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A517842161496C001FB390 /* UserServices.swift */; };
-		73A5178821614A3D001FB390 /* UserServicesDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178721614A3D001FB390 /* UserServicesDTOs.swift */; };
-		73A5178C21614BA2001FB390 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178B21614BA2001FB390 /* UserManager.swift */; };
+		73A5178C21614BA2001FB390 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178B21614BA2001FB390 /* SessionManager.swift */; };
 		73A5178F21617583001FB390 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A5178E21617583001FB390 /* DatabaseManager.swift */; };
 		73A51791216175CF001FB390 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A51790216175CF001FB390 /* UIImage+Extensions.swift */; };
 		73DF4888210D72B600A7A344 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DF4887210D72B600A7A344 /* UIScrollView+Extensions.swift */; };
@@ -70,12 +75,17 @@
 		7346196021671EC3000586A4 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		7346196221671ECD000586A4 /* IntroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewModel.swift; sourceTree = "<group>"; };
 		7346196821672A25000586A4 /* Intro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		735F884A216A9B1500D0E531 /* SessionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionState.swift; sourceTree = "<group>"; };
+		735F884C216A9D0100D0E531 /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		735F884E216AA74B00D0E531 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		735F8850216AA87600D0E531 /* ServicesType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesType.swift; sourceTree = "<group>"; };
+		735F8852216ABDD700D0E531 /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
+		735F8854216ACA4000D0E531 /* UserServicesDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesDTOs.swift; sourceTree = "<group>"; };
 		739054E72165C475008F820A /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
 		739054E92165C98D008F820A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		73A1A8882163398500AB71E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		73A517842161496C001FB390 /* UserServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServices.swift; sourceTree = "<group>"; };
-		73A5178721614A3D001FB390 /* UserServicesDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesDTOs.swift; sourceTree = "<group>"; };
-		73A5178B21614BA2001FB390 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		73A5178B21614BA2001FB390 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
 		73A5178E21617583001FB390 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		73A51790216175CF001FB390 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		73DF4887210D72B600A7A344 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
@@ -148,6 +158,7 @@
 		730E198520AE6CB200BACDAA /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				735F8850216AA87600D0E531 /* ServicesType.swift */,
 				73A517842161496C001FB390 /* UserServices.swift */,
 			);
 			name = Services;
@@ -160,6 +171,7 @@
 				73DF4887210D72B600A7A344 /* UIScrollView+Extensions.swift */,
 				73A51790216175CF001FB390 /* UIImage+Extensions.swift */,
 				7346195A21670AD9000586A4 /* UIView+Extensions.swift */,
+				735F8852216ABDD700D0E531 /* Codable+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -167,6 +179,7 @@
 		730E198720AE6CCF00BACDAA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				735F8847216A9AA900D0E531 /* Session */,
 				730E19A020AF6ADE00BACDAA /* DataModel */,
 				73A5178D2161753C001FB390 /* DatabaseModel */,
 			);
@@ -205,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				730E199420AEA84D00BACDAA /* DataModel.swift */,
+				739054E92165C98D008F820A /* User.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -222,8 +236,9 @@
 		73277694214F642000699D0F /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				73A5178B21614BA2001FB390 /* UserManager.swift */,
+				73A5178B21614BA2001FB390 /* SessionManager.swift */,
 				73A5178E21617583001FB390 /* DatabaseManager.swift */,
+				735F884C216A9D0100D0E531 /* KeychainManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -244,6 +259,15 @@
 				7346196821672A25000586A4 /* Intro.storyboard */,
 			);
 			path = IntroViewController;
+			sourceTree = "<group>";
+		};
+		735F8847216A9AA900D0E531 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				735F884E216AA74B00D0E531 /* Token.swift */,
+				735F884A216A9B1500D0E531 /* SessionState.swift */,
+			);
+			path = Session;
 			sourceTree = "<group>";
 		};
 		73A1A88A2163479600AB71E4 /* Utilities */ = {
@@ -275,7 +299,7 @@
 		73A5178621614A26001FB390 /* DTOs */ = {
 			isa = PBXGroup;
 			children = (
-				73A5178721614A3D001FB390 /* UserServicesDTOs.swift */,
+				735F8854216ACA4000D0E531 /* UserServicesDTOs.swift */,
 			);
 			path = DTOs;
 			sourceTree = "<group>";
@@ -292,7 +316,6 @@
 			isa = PBXGroup;
 			children = (
 				739054E72165C475008F820A /* DatabaseModel.swift */,
-				739054E92165C98D008F820A /* User.swift */,
 			);
 			path = DatabaseModel;
 			sourceTree = "<group>";
@@ -456,23 +479,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				739054E82165C475008F820A /* DatabaseModel.swift in Sources */,
+				735F8855216ACA4000D0E531 /* UserServicesDTOs.swift in Sources */,
 				730E198A20AE6E3A00BACDAA /* BindableType.swift in Sources */,
 				730E19A920AFA58500BACDAA /* SceneTransitionType.swift in Sources */,
 				73A51791216175CF001FB390 /* UIImage+Extensions.swift in Sources */,
 				739054EA2165C98D008F820A /* User.swift in Sources */,
+				735F884B216A9B1500D0E531 /* SessionState.swift in Sources */,
 				7322816D20F7FE1B00ECA96F /* BaseViewController.swift in Sources */,
 				730E377720BB6BBF00BACDAA /* Config.swift in Sources */,
 				73A1A8892163398500AB71E4 /* Constants.swift in Sources */,
 				73DF4888210D72B600A7A344 /* UIScrollView+Extensions.swift in Sources */,
-				73A5178C21614BA2001FB390 /* UserManager.swift in Sources */,
+				73A5178C21614BA2001FB390 /* SessionManager.swift in Sources */,
 				7346195E21671657000586A4 /* SpinnerViewable.swift in Sources */,
+				735F8851216AA87600D0E531 /* ServicesType.swift in Sources */,
 				73A5178F21617583001FB390 /* DatabaseManager.swift in Sources */,
 				730E199220AEA47C00BACDAA /* Secrets.swift in Sources */,
 				7346196121671EC3000586A4 /* IntroViewController.swift in Sources */,
 				7346195B21670AD9000586A4 /* UIView+Extensions.swift in Sources */,
-				73A5178821614A3D001FB390 /* UserServicesDTOs.swift in Sources */,
 				7322817220F802E500ECA96F /* SplashViewModel.swift in Sources */,
 				730E199D20AF691000BACDAA /* VillouError.swift in Sources */,
+				735F884F216AA74B00D0E531 /* Token.swift in Sources */,
+				735F8853216ABDD700D0E531 /* Codable+Extensions.swift in Sources */,
+				735F884D216A9D0100D0E531 /* KeychainManager.swift in Sources */,
 				73A517852161496C001FB390 /* UserServices.swift in Sources */,
 				730E197220AE617600BACDAA /* AppDelegate.swift in Sources */,
 				7322816520F7FBC500ECA96F /* Theme.swift in Sources */,
@@ -557,6 +585,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -610,6 +639,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -622,8 +652,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F26XL4W94;
 				INFOPLIST_FILE = "$(SRCROOT)/villou_ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.villou.villou_ios;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.villou.villou-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -638,8 +671,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F26XL4W94;
 				INFOPLIST_FILE = "$(SRCROOT)/villou_ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.villou.villou_ios;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.villou.villou-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
