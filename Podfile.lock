@@ -4,6 +4,7 @@ PODS:
     - RxSwift (~> 4.3.0)
   - Alamofire (4.7.3)
   - Differentiator (3.1.0)
+  - KeychainAccess (3.1.1)
   - Moya/Core (11.0.2):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
@@ -36,6 +37,7 @@ PODS:
 
 DEPENDENCIES:
   - Action
+  - KeychainAccess
   - Moya/RxSwift (~> 11.0)
   - NVActivityIndicatorView
   - RealmSwift
@@ -51,6 +53,7 @@ SPEC REPOS:
     - Action
     - Alamofire
     - Differentiator
+    - KeychainAccess
     - Moya
     - NVActivityIndicatorView
     - Realm
@@ -67,6 +70,7 @@ SPEC CHECKSUMS:
   Action: 2275d04a407ecaf46a58d58a304388a28155a0a1
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
+  KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
   Moya: a725035953bc1c0eb1be505ab903984501d82440
   NVActivityIndicatorView: ec7440a57af2450319d3a4181cca7da6fc127064
   Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
@@ -79,6 +83,6 @@ SPEC CHECKSUMS:
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: 6596ffb295016e529a887857d6c4ae679a860ad3
+PODFILE CHECKSUM: a4e5fc5610764aaf1fa50c29a3006408807ca8f1
 
 COCOAPODS: 1.5.3
