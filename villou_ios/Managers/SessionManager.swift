@@ -93,7 +93,7 @@ extension SessionManager: SessionManagerType {
             .flatMap { self.reloadUser(token: $0) }
     }
 
-    fileprivate func reloadUser(token: Token) -> Observable<SessionState> {
+    private func reloadUser(token: Token) -> Observable<SessionState> {
         userServices.setToken(token)
         return userServices.getMe()
             .map { [weak self] in
@@ -103,10 +103,20 @@ extension SessionManager: SessionManagerType {
         }
     }
 
+    private func resetKeychain() throws {
+        try keychainManager.clearAllStores()
+    }
+
+    private func resetDatabase() throws {
+        try databaseManager.reset()
+    }
+
     func signOut() -> Observable<SessionState> {
-        return Observable.create { observer in
-            self.state.value = .none
-            observer.onNext(self.state.value)
+        return Observable.create { [weak self] observer in
+            try? self?.resetDatabase()
+            try? self?.resetKeychain()
+            self?.state.value = .none
+            observer.onNext(self?.state.value ?? .none)
             observer.onCompleted()
 
             return Disposables.create()
