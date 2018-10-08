@@ -14,7 +14,7 @@ class KeychainManager {
 
     private static let basePrefix = Bundle.main.bundleIdentifier!
 
-    enum Store: String {
+    enum Store: String, CaseIterable {
         case session
     }
 
@@ -54,12 +54,11 @@ class KeychainManager {
         try keychain(for: store).removeAll()
     }
 
-    // TODO: Swift 4.2
-//    func clearAllStores() throws {
-//        for store in Store.allCases {
-//            keychain(for: store).removeAll()
-//        }
-//    }
+    func clearAllStores() throws {
+        for store in Store.allCases {
+            try keychain(for: store).removeAll()
+        }
+    }
 
     // MARK: Helper methods
 
