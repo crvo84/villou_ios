@@ -186,7 +186,7 @@ extension Theme.NavigationBar {
         navBar.tintColor = tintColor.color
         navBar.isTranslucent = isTranslucent
 
-        var titleAttrs = [NSAttributedStringKey: Any]()
+        var titleAttrs = [NSAttributedString.Key: Any]()
         if let titleTextColor = titleTextColor {
             titleAttrs[.foregroundColor] = titleTextColor.color
         }
@@ -204,7 +204,7 @@ extension Theme.NavigationItem {
 
         let backButton = UIBarButtonItem()
         backButton.title = backButtonTitle
-        backButton.setTitleTextAttributes([NSAttributedStringKey.font : backButtonTitleFont.font], for: .normal)
+        backButton.setTitleTextAttributes([NSAttributedString.Key.font : backButtonTitleFont.font], for: .normal)
 
         navItem.backBarButtonItem = backButton
         navItem.hidesBackButton = hidesBackButton
