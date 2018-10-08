@@ -14,8 +14,13 @@ protocol ServicesType {
 }
 
 extension ServicesType {
-    static func getProvider<T>(type: T.Type, token: Token?, isDebugMode: Bool = Config.isDebugMode) -> MoyaProvider<T> {
-        return MoyaProvider<T>(plugins: getProviderPlugins(token: token, isDebugMode: isDebugMode))
+    static func getProvider<T>(type: T.Type, token: Token?,
+                               isDebugMode: Bool = Config.Debug.isOn,
+                               useStubs: Bool = Config.Debug.useStubs) -> MoyaProvider<T> {
+        let stubMode: StubBehavior = useStubs ? .delayed(seconds: Config.Debug.stubsDelay) : .never
+
+        return MoyaProvider<T>(stubClosure: {_ in stubMode },
+                               plugins: getProviderPlugins(token: token, isDebugMode: isDebugMode))
     }
 
     private static func getProviderPlugins(token: Token?, isDebugMode: Bool) -> [PluginType] {

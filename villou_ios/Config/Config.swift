@@ -9,7 +9,11 @@
 import Foundation
 
 struct Config {
-    static let isDebugMode = true
+    struct Debug {
+        static let isOn = true
+        static let useStubs = true
+        static let stubsDelay: TimeInterval = 1.0
+    }
 
     struct Api {
         static let baseUrl = ""
