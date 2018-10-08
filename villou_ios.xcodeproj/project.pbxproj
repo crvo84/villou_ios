@@ -36,6 +36,8 @@
 		735F8851216AA87600D0E531 /* ServicesType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F8850216AA87600D0E531 /* ServicesType.swift */; };
 		735F8853216ABDD700D0E531 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F8852216ABDD700D0E531 /* Codable+Extensions.swift */; };
 		735F8855216ACA4000D0E531 /* UserServicesDTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F8854216ACA4000D0E531 /* UserServicesDTOs.swift */; };
+		735F8858216B123D00D0E531 /* UserServicesStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F8857216B123D00D0E531 /* UserServicesStubs.swift */; };
+		735F885A216B154A00D0E531 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735F8859216B154A00D0E531 /* Data+Extensions.swift */; };
 		739054E82165C475008F820A /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E72165C475008F820A /* DatabaseModel.swift */; };
 		739054EA2165C98D008F820A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739054E92165C98D008F820A /* User.swift */; };
 		73A1A8892163398500AB71E4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A1A8882163398500AB71E4 /* Constants.swift */; };
@@ -81,6 +83,8 @@
 		735F8850216AA87600D0E531 /* ServicesType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesType.swift; sourceTree = "<group>"; };
 		735F8852216ABDD700D0E531 /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
 		735F8854216ACA4000D0E531 /* UserServicesDTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesDTOs.swift; sourceTree = "<group>"; };
+		735F8857216B123D00D0E531 /* UserServicesStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicesStubs.swift; sourceTree = "<group>"; };
+		735F8859216B154A00D0E531 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		739054E72165C475008F820A /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
 		739054E92165C98D008F820A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		73A1A8882163398500AB71E4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				73A51790216175CF001FB390 /* UIImage+Extensions.swift */,
 				7346195A21670AD9000586A4 /* UIView+Extensions.swift */,
 				735F8852216ABDD700D0E531 /* Codable+Extensions.swift */,
+				735F8859216B154A00D0E531 /* Data+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -207,9 +212,10 @@
 		730E198E20AE998400BACDAA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				73A5178621614A26001FB390 /* DTOs */,
 				73A5178A21614A68001FB390 /* Apis */,
 				730E198520AE6CB200BACDAA /* Services */,
+				73A5178621614A26001FB390 /* DTOs */,
+				735F8856216B11D400D0E531 /* Stubs */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -268,6 +274,14 @@
 				735F884A216A9B1500D0E531 /* SessionState.swift */,
 			);
 			path = Session;
+			sourceTree = "<group>";
+		};
+		735F8856216B11D400D0E531 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				735F8857216B123D00D0E531 /* UserServicesStubs.swift */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		73A1A88A2163479600AB71E4 /* Utilities */ = {
@@ -494,6 +508,7 @@
 				735F8851216AA87600D0E531 /* ServicesType.swift in Sources */,
 				73A5178F21617583001FB390 /* DatabaseManager.swift in Sources */,
 				730E199220AEA47C00BACDAA /* Secrets.swift in Sources */,
+				735F8858216B123D00D0E531 /* UserServicesStubs.swift in Sources */,
 				7346196121671EC3000586A4 /* IntroViewController.swift in Sources */,
 				7346195B21670AD9000586A4 /* UIView+Extensions.swift in Sources */,
 				7322817220F802E500ECA96F /* SplashViewModel.swift in Sources */,
@@ -506,6 +521,7 @@
 				7322816520F7FBC500ECA96F /* Theme.swift in Sources */,
 				730E199020AE99AF00BACDAA /* UserApi.swift in Sources */,
 				730E19A420AF98E600BACDAA /* Scene+ViewController.swift in Sources */,
+				735F885A216B154A00D0E531 /* Data+Extensions.swift in Sources */,
 				7346196321671ECD000586A4 /* IntroViewModel.swift in Sources */,
 				7322817020F802DD00ECA96F /* SplashViewController.swift in Sources */,
 				730E199520AEA84D00BACDAA /* DataModel.swift in Sources */,

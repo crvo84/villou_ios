@@ -13,6 +13,7 @@ enum UsersApi {
     case create(body: Encodable)
     case login(body: Encodable)
     case getMe
+//    case reload(user: User)
 }
 
 extension UsersApi: TargetType, AccessTokenAuthorizable {
@@ -69,6 +70,14 @@ extension UsersApi: TargetType, AccessTokenAuthorizable {
     }
 
     var sampleData: Data {
-        return Data() // TODO: implement for tests
+        switch self {
+        case .create(let body):
+            guard let dto = body as? UserServicesRequestDTO.Create else { return Data.zero }
+            return UserServicesStubs.create(firstName: dto.firstName, lastName: dto.lastName, email: dto.email)
+        case .login:
+            return UserServicesStubs.login()
+        case .getMe:
+            return UserServicesStubs.getMe()
+        }
     }
 }
